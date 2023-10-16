@@ -1,0 +1,23 @@
+<div class="container mt-5">
+  <h4>Just a few cute dogs with blue merle fur!</h4>
+  <div class="row row-cols-md-4 row-cols-md-4 g-4 mt-2">
+    <div class="col" *ngFor="let dog of dogsList$">
+      <div class="card shadow-sm h-100">
+        <img src={{dog.imgThumb}} class=" bd-placeholder-imgcard-img-top" alt="{{dog.breedName}} photo">
+        <div class="card-body">
+          <h5 class="card-title">{{dog.breedName}}</h5>
+          <p>
+            <span class="text-body-secondary">Breed type: </span>
+            <span>{{dog.breedType}}</span>
+          </p>
+          <p>
+            <span class="text-body-secondary">Fur color: </span>
+            <span>{{dog.furColor}}</span>
+          </p>
+        </div>
+        <div class="card-footer text-body-=econdary">
+          <a (click)="goToDogDetails(dog.id)" class="card-link">Find out more</a>
+        </div>
+      </div>
+  </div>
+</div>

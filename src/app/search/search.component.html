@@ -1,0 +1,25 @@
+<div class="container">
+  <div class="table-responsive mt-5">
+    <table class="table table-hover">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Breed name</th>
+          <th scope="col">Breed type</th>
+          <th scope="col">Origin</th>
+        </tr>
+      </thead>
+      <tbody>
+        <ng-container *ngFor="let dog of dogsList$">
+        <tr>
+          <th scope="row">{{dog.id}}</th>
+          <td>{{dog.breedName}}</td>
+          <td>{{dog.breedType}}</td>
+          <td>{{dog.origin}}</td>
+        </tr>
+      </ng-container>
+      </tbody>
+    </table>
+  </div>
+
+</div>

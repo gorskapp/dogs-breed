@@ -1,0 +1,68 @@
+<div class="card size mt-5">
+  <div class="row g-0">
+    <div class="col-lg-6 img-col">
+      <img src="{{dogDetails$.imgThumb}}" class="img-fluid rounded-start" alt="{{dogDetails$.breedName}} image">
+    </div>
+    <div class="col-lg-6">
+      <div class="card h-100 text-center">
+        <div class="card-body">
+          <h5 class="card-title mt-3">{{dogDetails$.breedName}}</h5>
+          <div class="row mt-4">
+            <div class="col-4">
+              <small class="card-text">Type</small>
+            </div>
+            <div class="col-4">
+              <small class="card-text">Origin</small>
+            </div>
+            <div class="col-4">
+              <small class="card-text">Life span</small>
+            </div>
+          </div>
+          <div class="row mt-2">
+            <div class="col-4">
+              <p class="card-text">{{dogDetails$.breedType}}</p>
+            </div>
+            <div class="col-4">
+              <p class="card-text">{{dogDetails$.origin}}</p>
+            </div>
+            <div class="col-4">
+              <p class="card-text">{{dogDetails$.minLifeSpan}} - {{dogDetails$.maxLifeSpan}}</p>
+            </div>
+          </div>
+          <div class="row mt-3">
+            <div class="col-5">
+              <small class="card-text">Height (inches)</small>
+            </div>
+            <div class="col-5">
+              <small class="card-text">Weight (pounds)</small>
+            </div>
+          </div>
+          <div class="row mt-2">
+            <div class="col-5">
+              <p class="card-text">{{dogDetails$.breedType}}</p>
+            </div>
+            <div class="col-5">
+              <p class="card-text">{{dogDetails$.origin}}</p>
+            </div>
+          </div>
+          <div class="row mt-3">
+            <small class="card-text">Fur color</small>
+          </div>
+          <div class="row mt-2">
+            <p class="card-text">{{dogDetails$.furColor}}</p>
+          </div>
+          <div class="row mt-5">
+            <p class="card-text">{{dogDetails$.breedDescription}}</p>
+          </div>
+          <div class="mt-3">
+            <button (click)="goBack()" type="button" class="btn btn-outline-dark go-back-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
+              </svg>
+            </button>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
